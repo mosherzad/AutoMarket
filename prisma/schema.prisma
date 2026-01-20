@@ -1,0 +1,119 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id            Int        @id @default(autoincrement())
+  username      String     @db.VarChar(100)
+  email         String     @unique
+  password      String
+  img           String?
+  phoneNumber   String?
+  isAdmin       Boolean    @default(false)
+  isBlocked     Boolean    @default(false)
+  isHidden      Boolean    @default(false)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  cars          Car[]
+  favorites     Favorite[]
+
+}
+
+model Car {
+  id            Int          @id @default(autoincrement())
+  brand         String
+  description   String?
+  carType       CarType
+  status        CarStatus
+  year          Int
+  contactNumber String?
+  cylinder      Int
+  location      Location
+  price         Decimal
+  fuel          FuelType
+  mileage       Int
+  transmission  Transmission
+  userId        Int
+  user          User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  images        Image[]
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  favorites     Favorite[]
+}
+
+model Image {
+  id        Int      @id @default(autoincrement())
+  url       String
+  carId     Int
+  car       Car      @relation(fields: [carId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model Favorite {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  carId     Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  car       Car      @relation(fields: [carId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, carId])
+}
+
+enum Transmission {
+  MANUAL
+  AUTOMATIC
+}
+
+enum FuelType {
+  PETROL
+  DIESEL
+  ELECTRIC
+  HYBRID
+}
+
+enum CarType {
+  SEDAN
+  SUV
+  HATCHBACK
+  COUPE
+  CONVERTIBLE
+  PICKUP
+  VAN
+  MINIVAN
+  WAGON       
+  CROSSOVER
+  SPORT
+}
+
+enum Location {    
+  ERBIL
+  SULAYMANIYAH
+  DUHOK
+  KIRKUK
+  BAGHDAD
+  BASRA
+  NINEVEH  
+  ANBAR
+  NAJAF
+  KARBALA
+  BABYLON       
+  DIYALA
+  DHI_QAR       
+  MAYSAN
+  MUTHANNA
+  QADISIYAH     
+  SALAHALDIN
+  WASIT
+  HALABJA
+}
+
+enum CarStatus {
+  AVAILABLE
+  SOLD
+}
