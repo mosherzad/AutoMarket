@@ -1,0 +1,318 @@
+{
+  "explore": {
+    "exploreCars": "استكشاف السيارات",
+    "filter": "تصفية",
+    "noResultFound": "لم يتم العثور على نتيجة"
+  },
+  "header": {
+    "addCar": "أضافة ",
+    "dashboard": "لوحة التحكم",
+    "explore": "استكشاف",
+    "favorites": "المفضلات",
+    "home": "الرئيسية",
+    "myCars": "سياراتي",
+    "profile": "الملف الشخصي",
+    "signIn": "تسجيل الدخول",
+    "register": "إنشاء حساب"
+  },
+  "hero": {
+    "subtitle1": "بوابتك إلى السيارة المثالية",
+    "subtitle2": "اشترِ بذكاء، قُد بشكل أفضل",
+    "subtitle3": "كل ما تحتاجه في مكان واحد",
+    "title1": "سوق السيارات",
+    "title2": "أفضل عروض السيارات",
+    "title3": "ابحث اشتر قُد"
+  },
+  "home": {
+    "latest": "أحدث السيارات",
+    "seeMore": "رؤية المزيد"
+  },
+  "carCard": {
+    "seeDetails": "عرض التفاصيل",
+    "status": { "SOLD": "مباع", "AVAILABLE": "متاح" }
+  },
+  "carDetails": {
+    "brand": "براند",
+    "year": "السنة",
+    "gearbox": "ناقل الحركة",
+    "gearType": {
+      "AUTOMATIC": "أوتوماتيك",
+      "MANUAL": "يدوي"
+    },
+    "fuel": "نوع الوقود",
+    "fuelType": {
+      "PETROL": "بنزين",
+      "DIESEL": "ديزل",
+      "HYBRID": "هايبرد",
+      "ELECTRIC": "كهرباء",
+      "GAS": "غاز"
+    },
+    "mileage": "المسافة المقطوعة",
+    "cylinder": "عدد الأسطوانات",
+    "price": "السعر",
+    "sellerInfo": "معلومات البائع",
+    "memberSince": "عضو منذ",
+    "phone": "الهاتف",
+    "location": "الموقع",
+    "locations": {
+      "ERBIL": "أربيل",
+      "SULAYMANIYAH": "السليمانية",
+      "DUHOK": "دهوك",
+      "KIRKUK": "كركوك",
+      "BAGHDAD": "بغداد",
+      "BASRA": "البصرة",
+      "NINEVEH": "نينوى",
+      "ANBAR": "الأنبار",
+      "NAJAF": "النجف",
+      "KARBALA": "كربلاء",
+      "BABYLON": "بابل",
+      "DIYALA": "ديالى",
+      "DHI_QAR": "ذي قار",
+      "MAYSAN": "ميسان",
+      "MUTHANNA": "المثنى",
+      "QADISIYAH": "القادسية",
+      "SALAHALDIN": "صلاح الدين",
+      "WASIT": "واسط",
+      "HALABJA": "حلبجة"
+    },
+    "postDate": "تاريخ النشر",
+    "description": "الوصف",
+    "relatedCars": "سيارات ذات صلة"
+  },
+  "login": {
+    "loginToAcc": "سجّل الدخول إلى حسابك",
+    "signUp": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "loginBtn": "تسجيل الدخول"
+  },
+  "signUp": {
+    "createAccount": "إنشاء حساب",
+    "alreadyAccount": "لديك حساب بالفعل؟",
+    "name": "الاسم",
+    "enterName": "أدخل اسمك",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "signUp": "سجّل"
+  },
+  "addToFavBtn": {
+    "addToFav": "إضافة إلى المفضلة",
+    "removeToFav": "إزالة من المفضلة"
+  },
+  "profile": {
+    "accountStatus": "حالة الحساب",
+    "active": "نشط",
+    "blocked": "محظور",
+    "email": "البريد الإلكتروني",
+    "joinDate": "تاريخ الانضمام",
+    "editProfile": "تعديل الملف الشخصي",
+    "favorites": "المفضلة",
+    "carsPosted": "السيارات المنشورة",
+    "recentActivity": "النشاط الأخير",
+    "activity": {
+      "addedToFav": "أضاف إلى المفضلة",
+      "postedForSale": "نشر للبيع",
+      "liked": "أعجب بـ"
+    }
+  },
+  "filterBox": {
+    "title": "الفلاتر",
+    "brand": "الماركة",
+    "minPrice": "أقل سعر",
+    "maxPrice": "أعلى سعر",
+    "carType": "نوع السيارة",
+    "allTypes": "كل الأنواع",
+    "fuelType": "نوع الوقود",
+    "fuel": {
+      "all": "كل أنواع الوقود",
+      "PETROL": "بنزين",
+      "DIESEL": "ديزل",
+      "HYBRID": "هايبرد",
+      "ELECTRIC": "كهربائي"
+    },
+    "allCylinders": "الكل",
+    "allFuel": "كل أنواع الوقود",
+    "cylinder": "عدد الاسطوانات",
+    "status": "حالة السيارة",
+    "carStatus": {
+      "all": "الكل",
+      "AVAILABLE": "متوفر",
+      "SOLD": "مباع"
+    },
+    "cancel": "إلغاء",
+    "apply": "تطبيق الفلتر"
+  },
+  "deleteProfileBtn": { "title": "حذف الحساب" },
+  "adminPage": {
+    "dashboardOverview": "نظرة عامة",
+    "totalUsers": "إجمالي المستخدمين",
+    "blockedUsers": "المستخدمون المحظورون",
+    "totalCarsListed": "إجمالي السيارات المدرجة",
+    "availableCars": "السيارات المتاحة",
+    "soldCars": "السيارات المباعة",
+    "hiddenCars": "السيارات المخفية",
+    "newUsers7Days": "مستخدمون جدد (٧ أيام)",
+    "newCars7Days": "سيارات جديدة (٧ أيام)",
+    "recentUsers": "المستخدمون الجدد",
+    "recentCars": "السيارات الجديدة",
+    "listRecentUsers": "قائمة المستخدمين المسجلين حديثًا",
+    "listRecentCars": "قائمة السيارات المضافة مؤخرًا"
+  },
+  "adminSidebar": {
+    "overview": "نظرة عامة",
+    "users": "المستخدمون",
+    "cars": "السيارات",
+    "blocked": "المحظورون",
+    "hidden": "المخفية"
+  },
+  "carTable": {
+    "number": "#",
+    "brand": "الماركة",
+    "type": "النوع",
+    "year": "السنة",
+    "price": "السعر",
+    "status": "الحالة",
+    "carStatus": {
+      "AVAILABLE": "متاح",
+      "SOLD": "مباع"
+    },
+    "action": "إجراء",
+    "delete": "حذف",
+    "adminCarsTitle": "السيارات",
+    "title": "هل تريد حذف هذا المستخدم؟",
+    "text": "لا يمكن التراجع عن هذا الإجراء!",
+    "confirmButtonText": "حذف",
+    "denyButtonText": "لا تحذف",
+    "cancelButtonText": "إلغاء",
+    "cancled": "تم الإلغاء",
+    "userWasNotDeleted": "لم يتم حذف المستخدم"
+  },
+  "usersTable": {
+    "index": "#",
+    "username": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "cars": "السيارات",
+    "role": "الدور",
+    "joined": "تاريخ الانضمام",
+    "actions": "الإجراءات",
+    "admin": "مشرف",
+    "user": "مستخدم",
+    "blockUser": "حظر",
+    "unblock": "الغاء الخظر",
+    "deleteUser": "حذف",
+    "adminUsersTitle": "المستخدمون",
+    "adminBlockedTitle": "المحظورون",
+    "title": "هل تريد حذف هذا المستخدم؟",
+    "text": "لا يمكن التراجع عن هذا الإجراء!",
+    "confirmButtonText": "حذف",
+    "denyButtonText": "لا تحذف",
+    "cancelButtonText": "إلغاء",
+    "cancled": "تم الإلغاء",
+    "userWasNotDeleted": "لم يتم حذف المستخدم"
+  },
+  "searchInput": {
+    "seachPlaceholder": "ابحث عن سيارة",
+    "searchResultsTitle": "نتائج البحث عن",
+    "noResultFound": "لم يتم العثور على نتائج"
+  },
+  "myCars": {
+    "myCarsTitle": "سياراتي",
+    "noListedCars": "لم تقم بإضافة أي سيارات للبيع حتى الآن",
+    "seeDetails": "عرض التفاصيل"
+  },
+  "editAndAddCarForm": {
+    "editListedCar": "تعديل السيارة المعروضة",
+    "editSubtitle": "املأ التفاصيل أدناه لتحديث سيارتك",
+
+    "addNewCarTitle": "إضافة سيارة جديدة",
+    "addNewCarSubtitle": "املأ البيانات أدناه لإضافة سيارتك",
+
+    "carImages": "صور السيارة",
+    "uploadHint": "انقر للتحميل أو اسحب وأفلت",
+
+    "brand": "براند",
+    "year": "السنة",
+    "contactNumber": "رقم التواصل",
+    "description": "الوصف",
+    "mileage": "المسافة المقطوعة (كم)",
+    "price": "السعر ($)",
+
+    "cylinders": "عدد السلندرات",
+    "fuel": "نوع الوقود",
+    "transmission": "ناقل الحركة",
+    "carType": "نوع السيارة",
+    "status": "الحالة",
+    "location": "الموقع",
+
+    "fuel_petrol": "بنزين",
+    "fuel_diesel": "ديزل",
+    "fuel_electric": "كهرباء",
+    "fuel_hybrid": "هايبرد",
+
+    "transmission_automatic": "أوتوماتيك",
+    "transmission_manual": "يدوي",
+
+    "status_available": "متوفرة",
+    "status_sold": "مباعة",
+
+    "updateCar": "تحديث السيارة",
+    "updatingCar": "جارٍ تحديث السيارة...",
+    "addCar": "أضف سيارة",
+    "addingCar": "... جارٍ الأضافة",
+    "locations": {
+      "ERBIL": "أربيل",
+      "SULAYMANIYAH": "السليمانية",
+      "DUHOK": "دهوك",
+      "KIRKUK": "كركوك",
+      "BAGHDAD": "بغداد",
+      "BASRA": "البصرة",
+      "NINEVEH": "نينوى",
+      "ANBAR": "الأنبار",
+      "NAJAF": "النجف",
+      "KARBALA": "كربلاء",
+      "BABYLON": "بابل",
+      "DIYALA": "ديالى",
+      "DHI_QAR": "ذي قار",
+      "MAYSAN": "ميسان",
+      "MUTHANNA": "المثنى",
+      "QADISIYAH": "القادسية",
+      "SALAHALDIN": "صلاح الدين",
+      "WASIT": "واسط",
+      "HALABJA": "حلبجة"
+    }
+  },
+  "editProfilePage": {
+    "editProfileTitle": "تعديل الملف الشخصي",
+    "profilePicture": "صورة الملف الشخصي",
+    "uploadHint": "ارفع صورة واضحة",
+    "username": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "phoneNumber": "رقم الهاتف",
+    "saveChanges": "حفظ التغييرات"
+  },
+  "pagination": {
+    "next": "التالي",
+    "previous": "السابق"
+  },
+  "logoutButton": {
+    "title": "تسجيل خروج"
+  },
+  "footer": {
+    "brandDescription": "سوق حديث لبيع وشراء السيارات بسهولة وأمان وبثقة.",
+    "explore": "استكشف",
+    "home": "الرئيسية",
+    "exploreCars": "استكشف السيارات",
+    "faq": "الأسئلة الشائعة",
+    "company": "الشركة",
+    "aboutUs": "من نحن",
+    "contact": "تواصل معنا",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الاستخدام",
+    "followUs": "تابعنا",
+    "rights": "جميع الحقوق محفوظة."
+  },
+  "favoritePage": {
+    "noFavoriteCarsYet": "لا توجد سيارات مفضلة حتى الآن",
+    "yourFavoriteCars": "سياراتك المفضلة"
+  }
+}

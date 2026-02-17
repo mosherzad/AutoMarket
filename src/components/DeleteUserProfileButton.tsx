@@ -5,11 +5,13 @@ import axios from "axios";
 import { FaTrash } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import Swal from "sweetalert2";
+import { useTranslations } from "next-intl";
 
 interface DeleteUserProfileProps {
   id: number;
 }
 const DeleteUserProfileButton = ({ id }: DeleteUserProfileProps) => {
+  const t = useTranslations("deleteProfileBtn");
   const router = useRouter();
   const handleProfileDelete = () => {
     Swal.fire({
@@ -49,7 +51,7 @@ const DeleteUserProfileButton = ({ id }: DeleteUserProfileProps) => {
       className="flex items-center justify-center space-x-2 w-full py-2 border border-red-500 text-red-600 rounded-lg hover:bg-red-50 transition cursor-pointer"
     >
       <FaTrash />
-      <span>Delete Account</span>
+      <span>{t("title")}</span>
     </button>
   );
 };

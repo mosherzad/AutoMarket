@@ -1,9 +1,9 @@
 import { DOMAIN } from "@/lib/constants";
 import { cookies } from "next/headers";
 
-const cookieStore = await cookies();
-
 export const getPostsCount = async () => {
+  const cookieStore = await cookies();
+
   const response = await fetch(`${DOMAIN}/api/admin/cars/count`, {
     headers: {
       Cookie: cookieStore.toString(),
@@ -17,6 +17,8 @@ export const getPostsCount = async () => {
 };
 
 export const getBlockedUsersCount = async () => {
+  const cookieStore = await cookies();
+
   const response = await fetch(`${DOMAIN}/api/admin/users/blocked`, {
     headers: {
       Cookie: cookieStore.toString(),
@@ -30,6 +32,8 @@ export const getBlockedUsersCount = async () => {
 };
 
 export const getUsersCount = async () => {
+  const cookieStore = await cookies();
+
   const response = await fetch(`${DOMAIN}/api/users/count`, {
     headers: {
       Cookie: cookieStore.toString(),
@@ -43,6 +47,8 @@ export const getUsersCount = async () => {
 };
 
 export const getAllUsers = async () => {
+  const cookieStore = await cookies();
+
   const response = await fetch(`${DOMAIN}/api/admin/users`, {
     headers: {
       Cookie: cookieStore.toString(),
@@ -56,6 +62,8 @@ export const getAllUsers = async () => {
 };
 
 export const getAllCars = async (pageNumber: string) => {
+  const cookieStore = await cookies();
+
   const response = await fetch(
     `${DOMAIN}/api/admin/cars?pageNumber=${pageNumber}`,
     {
@@ -63,7 +71,7 @@ export const getAllCars = async (pageNumber: string) => {
         Cookie: cookieStore.toString(),
       },
       cache: "no-cache",
-    }
+    },
   );
 
   if (!response.ok) throw Error("faild to fetch data");
@@ -72,6 +80,8 @@ export const getAllCars = async (pageNumber: string) => {
 };
 
 export const getAvailableCars = async () => {
+  const cookieStore = await cookies();
+
   const response = await fetch(`${DOMAIN}/api/admin/cars/available`, {
     headers: {
       Cookie: cookieStore.toString(),
@@ -85,6 +95,8 @@ export const getAvailableCars = async () => {
 };
 
 export const getSoldCars = async () => {
+  const cookieStore = await cookies();
+
   const response = await fetch(`${DOMAIN}/api/admin/cars/sold`, {
     headers: {
       Cookie: cookieStore.toString(),

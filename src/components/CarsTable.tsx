@@ -6,8 +6,10 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
 import { CarStatus, CarType } from "@/generated/prisma/enums";
+import { getTranslations } from "next-intl/server";
+import { cookies } from "next/headers";
+import { AdminDeletePost } from "./AdminDeletePost";
 
 type CarsTable = {
   brand: string;
@@ -15,36 +17,54 @@ type CarsTable = {
   year: string;
   price: number;
   status: CarStatus;
+  id: number;
 };
 
 interface CarsTableProps {
   cars: CarsTable[];
 }
-const CarsTable = ({ cars }: CarsTableProps) => {
+const CarsTable = async ({ cars }: CarsTableProps) => {
+  const t = await getTranslations("carTable");
+  const cookieStore = await cookies();
+  const locale = cookieStore.get("NEXT_LOCALE")?.value || "en";
   return (
     <Table className="bg-white rounded-lg">
       <TableHeader>
         <TableRow>
-          <TableHead className="py-3 px-4 font-semibold text-[17px]">
+          <TableHead
+            className={`py-3 px-4 ${locale === "ar" || locale === "ckb" ? "text-right" : ""} font-semibold text-[17px]`}
+          >
             #
           </TableHead>
-          <TableHead className="py-3 px-4 font-semibold text-[17px]">
-            Brand
+          <TableHead
+            className={`py-3 px-4 ${locale === "ar" || locale === "ckb" ? "text-right" : ""} font-semibold text-[17px]`}
+          >
+            {t("brand")}
           </TableHead>
-          <TableHead className="py-3 px-4 font-semibold text-[17px]">
-            Type
+          <TableHead
+            className={`py-3 px-4 ${locale === "ar" || locale === "ckb" ? "text-right" : ""} font-semibold text-[17px]`}
+          >
+            {t("type")}
           </TableHead>
-          <TableHead className="py-3 px-4 font-semibold text-[17px]">
-            Year
+          <TableHead
+            className={`py-3 px-4 ${locale === "ar" || locale === "ckb" ? "text-right" : ""} font-semibold text-[17px]`}
+          >
+            {t("year")}
           </TableHead>
-          <TableHead className="py-3 px-4 font-semibold text-[17px]">
-            Price
+          <TableHead
+            className={`py-3 px-4 ${locale === "ar" || locale === "ckb" ? "text-right" : ""} font-semibold text-[17px]`}
+          >
+            {t("price")}
           </TableHead>
-          <TableHead className="py-3 px-4 font-semibold text-[17px]">
-            Status
+          <TableHead
+            className={`py-3 px-4 ${locale === "ar" || locale === "ckb" ? "text-right" : ""} font-semibold text-[17px]`}
+          >
+            {t("status")}
           </TableHead>
-          <TableHead className="py-3 px-4 text-right font-semibold text-[17px]">
-            Action
+          <TableHead
+            className={`py-3 px-4  text-right font-semibold text-[17px`}
+          >
+            {t("action")}
           </TableHead>
         </TableRow>
       </TableHeader>
@@ -56,11 +76,12 @@ const CarsTable = ({ cars }: CarsTableProps) => {
             <TableCell className="py-3 px-4">{car.carType}</TableCell>
             <TableCell className="py-3 px-4">{car.year}</TableCell>
             <TableCell className="py-3 px-4">${car.price}</TableCell>
-            <TableCell className="py-3 px-4">{car.status}</TableCell>
-            <TableCell className="py-3 px-4 text-right space-x-2">
-              <Button variant="destructive" size="sm">
-                Delete
-              </Button>
+            <TableCell className="py-3 px-4">
+              {t(`carStatus.${car.status}`)}
+            </TableCell>
+            <TableCell>
+              {" "}
+              <AdminDeletePost postId={car.id} />
             </TableCell>
           </TableRow>
         ))}

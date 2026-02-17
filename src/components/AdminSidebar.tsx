@@ -1,32 +1,28 @@
 "use client";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { MdBlock, MdHideImage, MdViewAgenda } from "react-icons/md";
 import { FaCar, FaUser } from "react-icons/fa";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 export default function AdminSidebar() {
   const pathname = usePathname();
-
+  const t = useTranslations("adminSidebar");
   const links = [
     {
       href: "/admin",
-      label: "Overview",
+      label: t("overview"),
       icon: <MdViewAgenda size={20} />,
     },
-    { href: "/admin/users", label: "Users", icon: <FaUser size={20} /> },
+    { href: "/admin/users", label: t("users"), icon: <FaUser size={20} /> },
     {
       href: "/admin/cars?pageNumber=1",
-      label: "Cars",
+      label: t("cars"),
       icon: <FaCar size={20} />,
     },
     {
       href: "/admin/users/blocked-user",
-      label: "Blocked",
+      label: t("blocked"),
       icon: <MdBlock size={20} />,
-    },
-    {
-      href: "/admin/cars/hidden-posts",
-      label: "Hidden ",
-      icon: <MdHideImage size={20} />,
     },
   ];
   return (
@@ -34,7 +30,7 @@ export default function AdminSidebar() {
       className="
     bg-white border rounded-lg
     w-full h-14
-    md:h-140 md:w-20 md:hover:w-56
+    md:h-140 md:w-18 md:hover:w-56
     transition-all duration-200
     group
   "

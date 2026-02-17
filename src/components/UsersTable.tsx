@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/table";
 import BlockUserButton from "./BlockUserButton";
 import DeleteUserButton from "./DeleteUserButton";
+import { useTranslations } from "next-intl";
 
 type UsersTable = {
   id: number;
@@ -27,6 +28,7 @@ interface UsersTableProps {
   users: UsersTable[];
 }
 export default function UsersTable({ users }: UsersTableProps) {
+  const t = useTranslations("usersTable");
   return (
     <div className="rounded-md border bg-background">
       <Table>
@@ -36,22 +38,22 @@ export default function UsersTable({ users }: UsersTableProps) {
               #
             </TableHead>
             <TableHead className="py-3 px-4 font-semibold text-[17px]">
-              Username
+              {t("username")}
             </TableHead>
             <TableHead className="py-3 px-4 font-semibold text-[17px]">
-              Email
+              {t("email")}
             </TableHead>
             <TableHead className="py-3 px-4 font-semibold text-[17px]">
-              Cars
+              {t("cars")}
             </TableHead>
             <TableHead className="py-3 px-4 font-semibold text-[17px]">
-              Role
+              {t("role")}
             </TableHead>
             <TableHead className="py-3 px-4 font-semibold text-[17px]">
-              Joined
+              {t("joined")}
             </TableHead>
             <TableHead className="py-3 px-4 text-center font-semibold text-[17px]">
-              Actions
+              {t("actions")}
             </TableHead>
           </TableRow>
         </TableHeader>
@@ -66,13 +68,13 @@ export default function UsersTable({ users }: UsersTableProps) {
               <TableCell className="py-4 px-4">{user.email}</TableCell>
               <TableCell className="py-4 px-4">{user._count.cars}</TableCell>
               <TableCell className="py-4 px-4">
-                {user.isAdmin ? "Admin" : "User"}
+                {user.isAdmin ? t("admin") : t("user")}
               </TableCell>
               <TableCell className="py-4 px-4">
                 {new Date(user.createdAt).toLocaleDateString()}
               </TableCell>
 
-              <TableCell className="flex items-center py-4 px-4 text-right space-x-5 justify-center">
+              <TableCell className="flex items-center py-4 px-4 text-right space-x-1">
                 <BlockUserButton userId={user.id} isBlocked={user.isBlocked} />
 
                 <DeleteUserButton userId={user.id} />

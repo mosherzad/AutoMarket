@@ -11,6 +11,7 @@ import { POST_PER_PAGE } from "@/lib/constants";
  * @route ~/api/cars
  * @access public
  */
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);

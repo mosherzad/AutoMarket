@@ -1,8 +1,9 @@
 "use client";
 
 import { MdClose } from "react-icons/md";
-import { useRouter, useSearchParams } from "next/navigation";
-
+import { useSearchParams } from "next/navigation";
+import { useRouter } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 type Props = {
   open: boolean;
   onClose: () => void;
@@ -11,7 +12,7 @@ type Props = {
 const FilterBox = ({ open, onClose }: Props) => {
   const router = useRouter();
   const searchParams = useSearchParams();
-
+  const t = useTranslations("filterBox");
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -34,7 +35,7 @@ const FilterBox = ({ open, onClose }: Props) => {
 
   return (
     <div
-      className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-50 transition-all duration-200 ${
+      className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-59 transition-all duration-200 ${
         open ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
@@ -44,7 +45,7 @@ const FilterBox = ({ open, onClose }: Props) => {
         }`}
       >
         <div className="flex items-center justify-between text-md md:text-xl font-semibold">
-          <h1>Filters</h1>
+          <h1>{t("title")}</h1>
           <MdClose
             onClick={onClose}
             className="cursor-pointer text-2xl hover:bg-gray-100 rounded-full"
@@ -56,7 +57,7 @@ const FilterBox = ({ open, onClose }: Props) => {
         <form onSubmit={onSubmit} className="flex flex-col gap-9">
           <div className="flex flex-col">
             {" "}
-            <label className="font-semibold">Brand</label>{" "}
+            <label className="font-semibold">{t("brand")}</label>{" "}
             <input
               type="text"
               name="brand"
@@ -66,7 +67,7 @@ const FilterBox = ({ open, onClose }: Props) => {
           </div>{" "}
           <div className="flex flex-col">
             {" "}
-            <label className="font-semibold">Min Price</label>{" "}
+            <label className="font-semibold">{t("minPrice")}</label>{" "}
             <input
               type="number"
               name="minPrice"
@@ -76,7 +77,7 @@ const FilterBox = ({ open, onClose }: Props) => {
           </div>{" "}
           <div className="flex flex-col">
             {" "}
-            <label className="font-semibold">Max Price</label>{" "}
+            <label className="font-semibold">{t("maxPrice")}</label>{" "}
             <input
               type="number"
               name="maxPrice"
@@ -86,13 +87,13 @@ const FilterBox = ({ open, onClose }: Props) => {
           </div>{" "}
           <div className="flex flex-col gap-1">
             {" "}
-            <label className="font-semibold">Car Type</label>{" "}
+            <label className="font-semibold">{t("carType")}</label>{" "}
             <select
               name="carType"
               className="border rounded-md px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               {" "}
-              <option value="">All Types</option>{" "}
+              <option value="">{t("allTypes")}</option>{" "}
               <option value="SEDAN">Sedan</option>{" "}
               <option value="SUV">SUV</option>{" "}
               <option value="HATCHBACK">Hatchback</option>{" "}
@@ -108,44 +109,44 @@ const FilterBox = ({ open, onClose }: Props) => {
           </div>{" "}
           <div className="flex flex-col gap-1">
             {" "}
-            <label className="font-semibold">Fuel Type</label>{" "}
+            <label className="font-semibold">{t("fuelType")}</label>{" "}
             <select
               name="fuel"
               className="border rounded-md px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               {" "}
-              <option value="">All Fuel Types</option>{" "}
-              <option value="PETROL">Petrol</option>{" "}
-              <option value="DIESEL">Diesel</option>{" "}
-              <option value="HYBRID">Hybrid</option>{" "}
-              <option value="ELECTRIC">Electric</option>{" "}
+              <option value="">{t(`fuel.${`all`}`)}</option>{" "}
+              <option value="PETROL">{t(`fuel.${`PETROL`}`)}</option>{" "}
+              <option value="DIESEL">{t(`fuel.${`DIESEL`}`)}</option>{" "}
+              <option value="HYBRID">{t(`fuel.${`HYBRID`}`)}</option>{" "}
+              <option value="ELECTRIC">{t(`fuel.${`ELECTRIC`}`)}</option>{" "}
             </select>{" "}
           </div>{" "}
           <div className="flex flex-col gap-1">
             {" "}
-            <label className="font-semibold">Cylinder</label>{" "}
+            <label className="font-semibold">{t("cylinder")}</label>{" "}
             <select
               name="cylinder"
               className="border rounded-md px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               {" "}
-              <option value="">All</option> <option value="3">3</option>{" "}
-              <option value="4">4</option> <option value="6">6</option>{" "}
-              <option value="8">8</option> <option value="12">12</option>{" "}
-              <option value="16">16</option>{" "}
+              <option value="">{t("allCylinders")}</option>{" "}
+              <option value="3">3</option> <option value="4">4</option>{" "}
+              <option value="6">6</option> <option value="8">8</option>{" "}
+              <option value="12">12</option> <option value="16">16</option>{" "}
             </select>{" "}
           </div>{" "}
           <div className="flex flex-col gap-1">
             {" "}
-            <label className="font-semibold">Car Status</label>{" "}
+            <label className="font-semibold">{t("status")}</label>{" "}
             <select
               name="status"
               className="border rounded-md px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               {" "}
-              <option value="">All</option>{" "}
-              <option value="AVAILABLE">Available</option>{" "}
-              <option value="SOLD">Sold</option>{" "}
+              <option value="">{t(`carStatus.${"all"}`)}</option>{" "}
+              <option value="AVAILABLE">{t(`carStatus.${"AVAILABLE"}`)}</option>{" "}
+              <option value="SOLD">{t(`carStatus.${"SOLD"}`)}</option>{" "}
             </select>{" "}
           </div>
           <div className="flex justify-end gap-3">
@@ -154,13 +155,13 @@ const FilterBox = ({ open, onClose }: Props) => {
               onClick={onClose}
               className="bg-gray-100 px-5 py-2 rounded-md cursor-pointer hover:bg-gray-300 transition-all duration-200"
             >
-              Cancel
+              {t("cancel")}
             </button>
             <button
               type="submit"
               className="bg-red-600 text-white px-5 py-2 rounded-md transition-all cursor-pointer duration-200 hover:bg-red-500"
             >
-              Apply Filters
+              {t("apply")}
             </button>
           </div>
         </form>

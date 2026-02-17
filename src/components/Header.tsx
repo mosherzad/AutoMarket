@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Navigation from "./Navigation";
 import {
   MdOutlineAdd,
@@ -8,12 +8,14 @@ import {
 } from "react-icons/md";
 import { cookies } from "next/headers";
 import { verifyTokenForPage } from "@/lib/verifyToken";
+import { getTranslations } from "next-intl/server";
 
 export default async function Header() {
   const storeCookie = await cookies();
   const token = storeCookie.get("jwtToken")?.value || "";
   const userPayload = verifyTokenForPage(token);
   const isLoggedin = !!userPayload;
+  const t = await getTranslations("header");
   return (
     <header className="border-b shadow-sm overflow-hidden bg-white">
       <nav className="container mx-auto max-w-7xl flex items-center justify-between px-6 py-4">
@@ -28,14 +30,14 @@ export default async function Header() {
               className="text-lg font-medium flex items-center gap-1 hover:underline hover:text-red-700 transition-all duration-300"
             >
               <MdHomeFilled size={25} />
-              <span>Home</span>
+              <span>{t("home")}</span>
             </Link>
             <Link
               href="/explore?pageNumber=1"
               className="text-lg font-medium flex items-center gap-1 hover:underline hover:text-red-700 transition-all duration-300"
             >
               <MdExplore size={25} />
-              <span>Explore Cars</span>
+              <span>{t("explore")}</span>
             </Link>
             {isLoggedin && (
               <div className="flex items-center gap-10">
@@ -44,7 +46,7 @@ export default async function Header() {
                   className="text-lg font-medium flex items-center gap-1 hover:underline hover:text-red-700 transition-all duration-300"
                 >
                   <MdOutlineAdd size={25} />
-                  <span>Add Cars</span>
+                  <span>{t("addCar")}</span>
                 </Link>
               </div>
             )}
@@ -54,7 +56,7 @@ export default async function Header() {
                 className="text-lg font-medium flex items-center gap-1 hover:underline hover:text-red-700 transition-all duration-300"
               >
                 <MdDashboard size={25} />
-                <span>Dashboard</span>
+                <span>{t("dashboard")}</span>
               </Link>
             )}
           </div>

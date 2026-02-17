@@ -1,7 +1,10 @@
-import Link from "next/link";
+"use client";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import { FaFacebook, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
+  const t = useTranslations("footer");
   return (
     <footer className="bg-slate-900 text-slate-300 mt-10">
       <div className="mx-auto max-w-7xl px-6 py-14">
@@ -9,17 +12,16 @@ const Footer = () => {
           <div>
             <h2 className="text-2xl font-bold text-white">AutoMarket</h2>
             <p className="mt-4 text-sm leading-relaxed">
-              A modern marketplace to buy and sell cars easily, securely, and
-              with confidence.
+              {t("brandDescription")}
             </p>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Explore</h3>
+            <h3 className="text-white font-semibold mb-4">{t("explore")}</h3>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link href="/" className="hover:text-red-500 transition">
-                  Home
+                  {t("home")}
                 </Link>
               </li>
               <li>
@@ -27,46 +29,46 @@ const Footer = () => {
                   href="/explore?pageNumber=1"
                   className="hover:text-red-500 transition"
                 >
-                  Exolore Cars
+                  {t("exploreCars")}
                 </Link>
               </li>
               <li></li>
               <li>
                 <Link href="/" className="hover:text-red-500 transition">
-                  FAQ
+                  {t("faq")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Company</h3>
+            <h3 className="text-white font-semibold mb-4">{t("company")}</h3>
             <ul className="space-y-3 text-sm">
               <li>
                 <Link href="/" className="hover:text-red-500 transition">
-                  About Us
+                  {t("aboutUs")}
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-red-500 transition">
-                  Contact
+                  {t("contact")}
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-red-500 transition">
-                  Privacy Policy
+                  {t("privacyPolicy")}
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-red-500 transition">
-                  Terms of Service
+                  {t("termsOfService")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Follow Us</h3>
+            <h3 className="text-white font-semibold mb-4">{t("followUs")}</h3>
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/mohamad.goran.165?mibextid=wwXIfr&rdid=jqnOGXwI8tG7e339&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CgUtQfEHH%2F%3Fmibextid%3DwwXIfr#"
@@ -100,7 +102,9 @@ const Footer = () => {
 
         <div className="my-10 h-px bg-slate-700" />
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-sm">
-          <p>© {new Date().getFullYear()} AutoMarket. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} {t("rights")}
+          </p>
         </div>
       </div>
     </footer>

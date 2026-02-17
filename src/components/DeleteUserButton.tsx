@@ -3,20 +3,22 @@ import axios from "axios";
 import { MdDelete } from "react-icons/md";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
 interface DeleteUserButtonProps {
   userId: number;
 }
 const DeleteUserButton = ({ userId }: DeleteUserButtonProps) => {
   const router = useRouter();
+  const t = useTranslations("usersTable");
   const handleDeleteUser = () => {
     Swal.fire({
-      title: "Delete this user?",
-      text: "This action cannot be undone!",
+      title: t("title"),
+      text: t("text"),
       icon: "warning",
       showDenyButton: true,
       showCancelButton: true,
-      confirmButtonText: "Delete",
-      denyButtonText: "Don't delete",
+      confirmButtonText: t("confirmButtonText"),
+      denyButtonText: t("denyButtonText"),
       confirmButtonColor: "#dc2626",
       denyButtonColor: "#6b7280",
     }).then(async (result) => {
@@ -36,17 +38,17 @@ const DeleteUserButton = ({ userId }: DeleteUserButtonProps) => {
           );
         }
       } else if (result.isDenied) {
-        Swal.fire("Cancelled", "User was not deleted", "info");
+        Swal.fire(t("cancled"), t("userWasNotDeleted"), "info");
       }
     });
   };
   return (
     <button
       onClick={handleDeleteUser}
-      className="flex items-center space-x-2 rounded-lg px-4 cursor-pointer py-2 text-sm font-semibold bg-red-500 text-white hover:bg-red-600 duration-200 transition-all"
+      className="flex items-centerspace-x-2 rounded-lg px-2 cursor-pointer py-2 text-sm font-semibold bg-red-500 text-white hover:bg-red-600 duration-200 transition-all"
     >
       <MdDelete size={20} />
-      <span>Delete</span>
+      <span>{t("deleteUser")}</span>
     </button>
   );
 };

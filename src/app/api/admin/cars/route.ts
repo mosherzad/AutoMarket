@@ -36,6 +36,7 @@ export async function GET(request: NextRequest) {
         price: true,
         year: true,
         status: true,
+        id: true,
       },
     });
 

@@ -1,0 +1,321 @@
+{
+  "explore": {
+    "exploreCars": "گەڕان بۆ ئۆتۆمبیل",
+    "filter": "فلتەر",
+    "noResultFound": "هیچ ئەنجامێک نەدۆزراووە"
+  },
+  "header": {
+    "addCar": "زیادکردن",
+    "dashboard": "داشبۆرد",
+    "explore": "گەڕان",
+    "favorites": "دڵخوازەکان",
+    "home": "سەرەکی",
+    "myCars": "پۆستەکانم",
+    "profile": "پرۆفایل",
+    "signIn": "چوونە ژوورەوە",
+    "register": "دروستکردنی هەژمار"
+  },
+  "hero": {
+    "subtitle1": "دەروازەی تۆ بۆ ئۆتۆمبیلی خەونەکانت",
+    "subtitle2": "بەهێزتر بکڕە باشتر  لێ خوڕە",
+    "subtitle3": "هەموو شتێک کە پێویستتە لە یەک شوێن",
+    "title1": "بازاڕی ئۆتۆمبیل",
+    "title2": "باشترین نرخەکانی ئۆتۆمبیل",
+    "title3": "بدۆزە. بکرە. لێ خوڕە"
+  },
+  "home": {
+    "latest": "نوێترین ئۆتۆمبیلەکان",
+    "seeMore": "زیاتر بینە"
+  },
+  "carCard": {
+    "seeDetails": "زانیاری زیاتر",
+    "status": {
+      "SOLD": "فرۆشراو",
+      "AVAILABLE": "بەردەست"
+    }
+  },
+  "carDetails": {
+    "brand": "براند",
+    "year": "ساڵ",
+    "gearbox": "جۆری گیربۆکس",
+    "gearType": {
+      "AUTOMATIC": "ئۆتۆماتیک",
+      "MANUAL": "دەستی"
+    },
+    "fuel": "جۆری سووتەمەنی",
+    "fuelType": {
+      "PETROL": "بەنزین",
+      "DIESEL": "دیزڵ",
+      "HYBRID": "هایبرێد",
+      "ELECTRIC": "کارەبا",
+      "GAS": "گاز"
+    },
+    "mileage": "ڕؤیشتن",
+    "cylinder": "سیلێندەر",
+    "price": "نرخ",
+    "sellerInfo": "زانیاری فرۆشیار",
+    "memberSince": "ئەندامە لە",
+    "phone": "تەلەفون",
+    "location": "شوێن",
+    "locations": {
+      "ERBIL": "هەولێر",
+      "SULAYMANIYAH": "سلێمانی",
+      "DUHOK": "دهۆک",
+      "KIRKUK": "کەرکوک",
+      "BAGHDAD": "بەغدا",
+      "BASRA": "بەصرا",
+      "NINEVEH": "نەینەوا",
+      "ANBAR": "ئەنبار",
+      "NAJAF": "نەجەف",
+      "KARBALA": "کەرەبەلا",
+      "BABYLON": "بابل",
+      "DIYALA": "دیالە",
+      "DHI_QAR": "زیقار",
+      "MAYSAN": "میسان",
+      "MUTHANNA": "موسەنا",
+      "QADISIYAH": "قادسیه",
+      "SALAHALDIN": "سەلاحەدین",
+      "WASIT": "واست",
+      "HALABJA": "هەڵەبجە"
+    },
+    "postDate": "بەرواری بڵاوکردنەوە",
+    "description": "وەسف",
+    "relatedCars": "ئۆتۆمبێلە پەیوەندیدارەکان"
+  },
+  "login": {
+    "loginToAcc": "چوونە ژوورەوە بۆ هەژمارەکەت",
+    "signUp": "خۆت تۆمار بکە",
+    "email": "ئیمەیل",
+    "password": "وشەی نهێی",
+    "loginBtn": "چوونە ژوورەوە"
+  },
+  "signUp": {
+    "createAccount": "دروستکردنی هەژمار",
+    "alreadyAccount": "پێشتر هەژمارەکەت هەیە؟",
+    "name": "ناو",
+    "enterName": "ناوت بنوسە",
+    "email": "ئیمەیل",
+    "password": "وشەی نهێی",
+    "signUp": "خۆت تۆمار بکە"
+  },
+  "addToFavBtn": {
+    "addToFav": "زیادکردن بۆ دڵخوازەکان",
+    "removeToFav": "لابردن لە دڵخوازەکان"
+  },
+  "profile": {
+    "accountStatus": "دۆخی هەژمار",
+    "active": "چالاک",
+    "blocked": "بلۆک کراو",
+    "email": "ئیمەیڵ",
+    "joinDate": "ڕێکەوتی بەشداربوون",
+    "editProfile": "دەستکاری پرۆفایل",
+    "favorites": "دڵخوازەکان",
+    "carsPosted": "ئۆتۆمبێلە بڵاوکراوەکان",
+    "recentActivity": "چالاکییە دوایینەکان",
+    "activity": {
+      "addedToFav": "زیادکرد بۆ دڵخوازەکان",
+      "postedForSale": "بڵاوکرد بۆ فرۆشتن",
+      "liked": "بەدڵی بوو"
+    }
+  },
+  "filterBox": {
+    "title": "فلتەرەکان",
+    "brand": "براند",
+    "minPrice": "کەمترین نرخ",
+    "maxPrice": "زۆرترین نرخ",
+    "carType": "جۆری ئۆتۆمبێل",
+    "allTypes": "هەموو جۆرەکان",
+    "allCylinders": "هەموو",
+    "fuelType": "جۆری سووتەمەنی",
+    "fuel": {
+      "all": "هەموو جۆرەکان",
+      "PETROL": "بەنزین",
+      "DIESEL": "دیژڵ",
+      "HYBRID": "هايبرێد",
+      "ELECTRIC": "کارەبایی"
+    },
+    "cylinder": "سیلێندەر",
+    "status": "دۆخی ئۆتۆمبێل",
+    "carStatus": {
+      "all": "هەموو ",
+      "AVAILABLE": "بەردەستە",
+      "SOLD": "فرۆشراو"
+    },
+    "available": "بەردەستە",
+    "cancel": "هەڵوەشاندنەوە",
+    "apply": " فلتەرکردن"
+  },
+  "deleteProfileBtn": { "title": "سڕینەوەی هەژمار" },
+  "adminPage": {
+    "dashboardOverview": "پوختەی داشبۆرد",
+    "totalUsers": "کۆی بەکارهێنەرەکان",
+    "blockedUsers": "بەکارهێنەرە بلۆککراوەکان",
+    "totalCarsListed": "کۆی ئۆتۆمبیلە بڵاوکراوەکان",
+    "availableCars": "ئۆتۆمبێلەکانی بەردەست",
+    "soldCars": "ئۆتۆمبێلەکانی فرۆشراو",
+    "hiddenCars": "ئۆتۆمبیلە نهێنراوەکان",
+    "newUsers7Days": " دواین بەکارهێنەرەکان (٧ ڕۆژ)",
+    "newCars7Days": "دوایین ئۆتۆمبێلەکان (٧ ڕۆژ)",
+    "recentUsers": "بەکارهێنەرە دوایین",
+    "recentCars": "ئۆتۆمبیلە دوایین",
+    "listRecentUsers": "لیستی بەکارهێنەرانی نوێ تۆمارکراو",
+    "listRecentCars": "لیستی ئوتۆمبیلە نوێ زیادکراو"
+  },
+  "adminSidebar": {
+    "overview": "پوختە",
+    "users": "بەکارهێنەرەکان",
+    "cars": "ئۆتۆمبیلەکان",
+    "blocked": "بلۆککراوەکان",
+    "hidden": "نهێنراوەکان"
+  },
+  "carTable": {
+    "number": "#",
+    "brand": "براند",
+    "type": "جۆر",
+    "year": "ساڵ",
+    "price": "نرخ",
+    "status": "دۆخ",
+    "carStatus": {
+      "AVAILABLE": "بەردەست",
+      "SOLD": "فرۆشراو"
+    },
+    "action": "ئەکشن",
+    "delete": "سڕینەوە",
+    "adminCarsTitle": "ئۆتۆمبیلەکان",
+    "title": "ئایا دەتەوێت ئەم بەکارهێنەرانە بسڕیتەوە؟",
+    "text": "ئەم کارە گەڕاندنەوەی نییە!",
+    "confirmButtonText": "سڕینەوە",
+    "denyButtonText": "پاشتگەزبوونەوە",
+    "cancelButtonText": "هەڵوەشاندنەوە",
+    "cancled": "هەڵوەشایەوە",
+    "userWasNotDeleted": "بەکارهێنەر نەسڕایەوە"
+  },
+  "usersTable": {
+    "index": "#",
+    "username": "ناوی بەکارهێنەر",
+    "email": "ئیمەیڵ",
+    "cars": "ئۆتۆمبێلەکان",
+    "role": "ئەرک",
+    "joined": "بەشداربوو",
+    "actions": "کردارەکان",
+    "admin": "ئەدمین",
+    "user": "بەکارهێنەر",
+    "blockUser": "بلۆککردن",
+    "unblock": "لابردنی بلۆک",
+    "deleteUser": "سڕینەوە",
+    "adminUsersTitle": "بەکارهێنەرەکان",
+    "adminBlockedTitle": "بلۆککراوەکان",
+    "title": "ئایا دەتەوێت ئەم بەکارهێنەرانە بسڕیتەوە؟",
+    "text": "ئەم کارە گەڕاندنەوەی نییە!",
+    "confirmButtonText": "سڕینەوە",
+    "denyButtonText": "پاشتگەزبوونەوە",
+    "cancelButtonText": "هەڵوەشاندنەوە",
+    "cancled": "هەڵوەشایەوە",
+    "userWasNotDeleted": "بەکارهێنەر نەسڕایەوە"
+  },
+  "searchInput": {
+    "seachPlaceholder": "گەڕان بۆ ئۆتۆمبێل",
+    "searchResultsTitle": "ئەنجامی گەڕان بۆ",
+    "noResultFound": "هیچ ئەنجامێک نەدۆزرایەوە"
+  },
+  "myCars": {
+    "myCarsTitle": "ئۆتۆمبێلەکانم",
+    "noListedCars": "هێشتا هیچ ئۆتۆمبێلێکت بۆ فرۆشتن تۆمار نەکردووە",
+    "seeDetails": "زانیاری زیاتر"
+  },
+  "editAndAddCarForm": {
+    "editListedCar": "دەستکاری ئۆتۆمبێلی تۆمارکراو",
+    "editSubtitle": "زانیارییەکان پڕ بکە بۆ نوێکردنەوەی ئۆتۆمبێلەکەت",
+
+    "addNewCarTitle": "زیادکردنی ئۆتۆمبێلی نوێ",
+    "addNewCarSubtitle": "زانیارییەکان بنووسە بۆ تۆمارکردنی ئۆتۆمبێلەکەت",
+
+    "carImages": "وێنەکانی ئۆتۆمبێل",
+    "uploadHint": "کلیک بکە بۆ زیادکردنی وێنە",
+
+    "brand": "براند",
+    "year": "ساڵ",
+    "contactNumber": "ژمارەی پەیوەندی",
+    "description": "وەسف",
+    "mileage": "ڕۆیشتن (کم)",
+    "price": "نرخ ($)",
+
+    "cylinders": "سیلێندەر",
+    "fuel": "جۆری سووتەمەنی",
+    "transmission": "گێڕبۆکس",
+    "carType": "جۆری ئۆتۆمبێل",
+    "status": "دۆخ",
+    "location": "شوێن",
+
+    "fuel_petrol": "بەنزین",
+    "fuel_diesel": "دیزل",
+    "fuel_electric": "کارەبایی",
+    "fuel_hybrid": "هایبرید",
+
+    "transmission_automatic": "ئۆتۆماتیک",
+    "transmission_manual": "دەستی",
+
+    "status_available": "بەردەست",
+    "status_sold": "فرۆشراو",
+
+    "updateCar": "نوێکردنەوەی زانیاری ئۆتۆمبێل",
+    "updatingCar": "نوێکردنەوەی ئۆتۆمبێل...",
+    "addCar": "زیادکردنی ئۆتۆمبێل",
+    "addingCar": "...زیادکردنی ئۆتۆمبێل",
+    "locations": {
+      "ERBIL": "هەولێر",
+      "SULAYMANIYAH": "سلێمانی",
+      "DUHOK": "دهۆک",
+      "KIRKUK": "کەرکوک",
+      "BAGHDAD": "بەغدا",
+      "BASRA": "بەصرا",
+      "NINEVEH": "نەینەوا",
+      "ANBAR": "ئەنبار",
+      "NAJAF": "نەجەف",
+      "KARBALA": "کەرەبەلا",
+      "BABYLON": "بابل",
+      "DIYALA": "دیالە",
+      "DHI_QAR": "زیقار",
+      "MAYSAN": "میسان",
+      "MUTHANNA": "موسەنا",
+      "QADISIYAH": "قادسیه",
+      "SALAHALDIN": "سەلاحەدین",
+      "WASIT": "واست",
+      "HALABJA": "هەڵەبجە"
+    }
+  },
+  "editProfilePage": {
+    "editProfileTitle": "دەستکاری پرۆفایل",
+    "profilePicture": "وێنەی پرۆفایل",
+    "uploadHint": "وێنەیەکی ڕوون زياد بکە",
+    "username": "ناوی بەکارهێنەر",
+    "email": "ئیمەیڵ",
+    "phoneNumber": "ژمارەی تەلەفۆن",
+    "saveChanges": "جێبەجێکردنی گۆڕانکارییەکان"
+  },
+  "pagination": {
+    "next": "دواتر",
+    "previous": "پێشتر"
+  },
+  "logoutButton": {
+    "title": "چوونەدەرەوە"
+  },
+  "footer": {
+    "brandDescription": "بازاڕێکی نوێن بۆ کڕین و فرۆشتنی ئۆتۆمبێل بە ئاسانی، پارێزراوی و بە متمانە.",
+    "explore": "بگەڕێ",
+    "home": "سەرەکی",
+    "exploreCars": "بگەڕێ لە ئۆتۆمبێلەکان",
+    "faq": "پرسیارە باوەکان",
+    "company": "کۆمپانیا",
+    "aboutUs": "دەربارەی ئێمە",
+    "contact": "پەیوەندی",
+    "privacyPolicy": "سیاسەتی تایبەتی",
+    "termsOfService": "مەرجەکانی بەکارهێنان",
+    "followUs": "پەیوەندیمان پێوە بکەن",
+    "rights": "هەموو مافەکان پارێزراون."
+  },
+  "favoritePage": {
+    "noFavoriteCarsYet": "هێشتا هیچ ئۆتۆمبێلی دڵخوازت نییە",
+    "yourFavoriteCars": "ئۆتۆمبێلە دڵخوازەکانت"
+  }
+}

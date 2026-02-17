@@ -1,0 +1,27 @@
+{
+  "explore": {
+    "exploreCars": "Explore Cars",
+    "filter": "Filter",
+    "noResultFound": "No result found"
+  },
+  "header": {
+    "addCar": "Add Car",
+    "dashboard": "Dashboard",
+    "explore": "Explore",
+    "favorites": "Favorites",
+    "home": "Home",
+    "myCars": "My Cars"
+  },
+  "hero": {
+    "subtitle1": "Your gateway to the perfect car",
+    "subtitle2": "Buy smarter, drive better",
+    "subtitle3": "Everything you need in one place",
+    "title1": "Auto Market",
+    "title2": "Best Car Deals",
+    "title3": "Find. Buy. Drive."
+  },
+  "home": {
+    "latest": "Latest Cars",
+    "seeMore": "See More"
+  }
+}

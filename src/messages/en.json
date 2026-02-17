@@ -1,7 +1,323 @@
 {
-  "home": "Home",
-  "explore": "Explore",
-  "search": "Search",
-  "noResult": "No result found",
-  "searchResultFor": "Search results for"
+  "explore": {
+    "exploreCars": "Explore Cars",
+    "filter": "Filter",
+    "noResultFound": "No result found"
+  },
+  "header": {
+    "addCar": "Add Car",
+    "dashboard": "Dashboard",
+    "explore": "Explore",
+    "favorites": "Favorites",
+    "home": "Home",
+    "myCars": "My Cars",
+    "profile": "Profile",
+    "signIn": "Sign In",
+    "register": "Register"
+  },
+  "hero": {
+    "subtitle1": "Your gateway to the perfect car",
+    "subtitle2": "Buy smarter, drive better",
+    "subtitle3": "Everything you need in one place",
+    "title1": "Auto Market",
+    "title2": "Best Car Deals",
+    "title3": "Find. Buy. Drive."
+  },
+  "home": {
+    "latest": "Latest Cars",
+    "seeMore": "See More"
+  },
+  "carCard": {
+    "seeDetails": "See Details",
+    "status": {
+      "SOLD": "SOLD",
+      "AVAILABLE": "AVAILABLE"
+    }
+  },
+  "carDetails": {
+    "brand": "Brand",
+    "year": "Year",
+    "gearbox": "Gearbox",
+    "gearType": {
+      "AUTOMATIC": "AUTOMATIC",
+      "MANUAL": "MANUAL"
+    },
+    "fuel": "Fuel",
+    "fuelType": {
+      "PETROL": "Petrol",
+      "DIESEL": "Diesel",
+      "HYBRID": "Hybrid",
+      "ELECTRIC": "Electric",
+      "GAS": "Gas"
+    },
+    "mileage": "Mileage",
+    "cylinder": "Cylinder",
+    "price": "Price",
+    "sellerInfo": "Seller Information",
+    "memberSince": "Member since",
+    "phone": "Phone",
+    "location": "Location",
+    "locations": {
+      "ERBIL": "Erbil",
+      "SULAYMANIYAH": "Sulaymaniyah",
+      "DUHOK": "Duhok",
+      "KIRKUK": "Kirkuk",
+      "BAGHDAD": "Baghdad",
+      "BASRA": "Basra",
+      "NINEVEH": "Nineveh",
+      "ANBAR": "Anbar",
+      "NAJAF": "Najaf",
+      "KARBALA": "Karbala",
+      "BABYLON": "Babylon",
+      "DIYALA": "Diyala",
+      "DHI_QAR": "Dhi Qar",
+      "MAYSAN": "Maysan",
+      "MUTHANNA": "Muthanna",
+      "QADISIYAH": "Qadisiyah",
+      "SALAHALDIN": "Salahaddin",
+      "WASIT": "Wasit",
+      "HALABJA": "Halabja"
+    },
+    "postDate": "Post Date",
+    "description": "Description",
+    "relatedCars": "Related Cars"
+  },
+  "login": {
+    "loginToAcc": "Login to your account",
+    "signUp": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "loginBtn": "Login"
+  },
+  "signUp": {
+    "createAccount": "Create an Account",
+    "alreadyAccount": "Already have an account?",
+    "name": "Name",
+    "enterName": "Enter your name",
+    "email": "Email",
+    "emailPlaceholder": "m@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "********",
+    "signUp": "Sign Up"
+  },
+  "addToFavBtn": {
+    "addToFav": "Add to Favorites",
+    "removeToFav": "Remove to Favorites"
+  },
+  "profile": {
+    "accountStatus": "Account Status",
+    "active": "Active",
+    "blocked": "Blocked",
+    "email": "Email",
+    "joinDate": "Join Date",
+    "editProfile": "Edit Profile",
+    "favorites": "Favorites",
+    "carsPosted": "Cars Posted",
+    "recentActivity": "Recent Activity",
+    "activity": {
+      "addedToFav": "Added to favorites",
+      "postedForSale": "Posted for sale",
+      "liked": "Liked"
+    }
+  },
+  "filterBox": {
+    "title": "Filters",
+    "brand": "Brand",
+    "minPrice": "Minimum Price",
+    "maxPrice": "Maximum Price",
+    "carType": "Car Type",
+    "allTypes": "All Types",
+    "allCylinders": "All",
+    "fuelType": "Fuel Type",
+    "fuel": {
+      "all": "All Fuel Types",
+      "PETROL": "Petrol",
+      "DIESEL": "Diesel",
+      "HYBRID": "Hybrid",
+      "ELECTRIC": "Electric"
+    },
+    "allFuel": "All Fuel Types",
+    "cylinder": "Cylinder",
+    "status": "Car Status",
+    "carStatus": {
+      "all": "All",
+      "AVAILABLE": "Available",
+      "SOLD": "Sold"
+    },
+    "cancel": "Cancel",
+    "apply": "Apply Filters"
+  },
+  "deleteProfileBtn": { "title": "Delete Account" },
+  "adminPage": {
+    "dashboardOverview": "Dashboard Overview",
+    "totalUsers": "Total Users",
+    "blockedUsers": "Blocked Users",
+    "totalCarsListed": "Total Cars listed",
+    "availableCars": "Available Cars",
+    "soldCars": "Sold Cars",
+    "hiddenCars": "Hidden Cars",
+    "newUsers7Days": "New Users (7 days)",
+    "newCars7Days": "New Cars (7 days)",
+    "recentUsers": "Recent Users",
+    "recentCars": "Recent Cars",
+    "listRecentUsers": "List of recently registered users",
+    "listRecentCars": "List of recently added car posts"
+  },
+  "adminSidebar": {
+    "overview": "Overview",
+    "users": "Users",
+    "cars": "Cars",
+    "blocked": "Blocked",
+    "hidden": "Hidden"
+  },
+  "carTable": {
+    "number": "#",
+    "brand": "Brand",
+    "type": "Type",
+    "year": "Year",
+    "price": "Price",
+    "status": "Status",
+    "carStatus": {
+      "AVAILABLE": "Available",
+      "SOLD": "Sold"
+    },
+    "action": "Action",
+    "delete": "Delete",
+    "adminCarsTitle": "Cars",
+    "title": "Delete your account?",
+    "text": "This action cannot be undone!",
+    "confirmButtonText": "Delete",
+    "denyButtonText": "Don't delete",
+    "cancelButtonText": "Cancel",
+    "cancled": "Canclled",
+    "userWasNotDeleted": "User wasn't deleted"
+  },
+  "usersTable": {
+    "index": "#",
+    "username": "Username",
+    "email": "Email",
+    "cars": "Cars",
+    "role": "Role",
+    "joined": "Joined",
+    "actions": "Actions",
+    "admin": "Admin",
+    "user": "User",
+    "blockUser": "Block",
+    "unblock": "Unblock",
+    "deleteUser": "Delete",
+    "adminUsersTitle": "Users",
+    "adminBlockedTitle": "Blocked Users",
+    "title": "Delete your account?",
+    "text": "This action cannot be undone!",
+    "confirmButtonText": "Delete",
+    "denyButtonText": "Don't delete",
+    "cancelButtonText": "Cancel",
+    "cancled": "Canclled",
+    "userWasNotDeleted": "User wasn't deleted"
+  },
+  "searchInput": {
+    "seachPlaceholder": "Seach Car...",
+    "searchResultsTitle": "The search results for",
+    "noResultFound": "No result found"
+  },
+  "myCars": {
+    "myCarsTitle": "My Cars",
+    "noListedCars": "You haven’t listed any cars for sale yet",
+    "seeDetails": "See Details"
+  },
+  "editAndAddCarForm": {
+    "editListedCar": "Edit Listed Car",
+    "editSubtitle": "Fill in the details below to update your car",
+
+    "addNewCarTitle": "Add New Car",
+    "addNewCarSubtitle": "Fill in the details below to list your car",
+
+    "carImages": "Car Images",
+    "uploadHint": "Click to upload or drag & drop",
+
+    "brand": "Brand",
+    "year": "Year",
+    "contactNumber": "Contact Number",
+    "description": "Description",
+    "mileage": "Mileage (KM)",
+    "price": "Price ($)",
+
+    "cylinders": "Cylinders",
+    "fuel": "Fuel",
+    "transmission": "Transmission",
+    "carType": "Car Type",
+    "status": "Status",
+    "location": "Location",
+
+    "fuel_petrol": "Petrol",
+    "fuel_diesel": "Diesel",
+    "fuel_electric": "Electric",
+    "fuel_hybrid": "Hybrid",
+
+    "transmission_automatic": "Automatic",
+    "transmission_manual": "Manual",
+
+    "status_available": "Available",
+    "status_sold": "Sold",
+
+    "updateCar": "Update Car",
+    "updatingCar": "Updating Car...",
+    "addCar": "Add Car",
+    "addingCar": "Adding Car",
+    "locations": {
+      "ERBIL": "Erbil",
+      "SULAYMANIYAH": "Sulaymaniyah",
+      "DUHOK": "Duhok",
+      "KIRKUK": "Kirkuk",
+      "BAGHDAD": "Baghdad",
+      "BASRA": "Basra",
+      "NINEVEH": "Nineveh",
+      "ANBAR": "Anbar",
+      "NAJAF": "Najaf",
+      "KARBALA": "Karbala",
+      "BABYLON": "Babylon",
+      "DIYALA": "Diyala",
+      "DHI_QAR": "Dhi Qar",
+      "MAYSAN": "Maysan",
+      "MUTHANNA": "Muthanna",
+      "QADISIYAH": "Qadisiyah",
+      "SALAHALDIN": "Salahaddin",
+      "WASIT": "Wasit",
+      "HALABJA": "Halabja"
+    }
+  },
+  "editProfilePage": {
+    "editProfileTitle": "Edit Profile",
+    "profilePicture": "Profile Picture",
+    "uploadHint": "Upload a clear and recent photo",
+    "username": "Username",
+    "email": "Email",
+    "phoneNumber": "Phone Number",
+    "saveChanges": "Save Changes"
+  },
+  "pagination": {
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "logoutButton": {
+    "title": "Logout"
+  },
+  "footer": {
+    "brandDescription": "A modern marketplace to buy and sell cars easily, securely, and with confidence.",
+    "explore": "Explore",
+    "home": "Home",
+    "exploreCars": "Explore Cars",
+    "faq": "FAQ",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "favoritePage": {
+    "noFavoriteCarsYet": "No favorite cars yet",
+    "yourFavoriteCars": "Your Favorite Cars"
+  }
 }

@@ -5,23 +5,25 @@ import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+  const t = useTranslations("hero");
   const images = [
     {
-      src: "1.jpg",
-      title: "Discover the Latest Trends",
-      subtitle: "Shop our new arrivals today",
+      src: "6.jpg",
+      title: t("title1"),
+      subtitle: t("subtitle1"),
     },
     {
-      src: "2.jpg",
-      title: "Exclusive Deals Just for You",
-      subtitle: "Save big on your favorite products",
+      src: "8.jpeg",
+      title: t("title2"),
+      subtitle: t("subtitle2"),
     },
     {
-      src: "3.jpg",
-      title: "Exclusive Deals Just for You",
-      subtitle: "Save big on your favorite products",
+      src: "7.jpg",
+      title: t("title3"),
+      subtitle: t("subtitle3"),
     },
   ];
 
@@ -31,7 +33,7 @@ const Hero = () => {
         modules={[Navigation, Pagination, Autoplay]}
         navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 6000 }}
+        autoplay={{ delay: 4000 }}
         loop
         className="rounded-xl w-full"
       >

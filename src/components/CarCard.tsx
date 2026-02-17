@@ -1,11 +1,16 @@
-import { Car } from "@/generated/prisma/client";
+import { Prisma } from "@/generated/prisma/client";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
+type CarWithImage = Prisma.CarGetPayload<{
+  include: { images: true };
+}>;
 interface CarCarProps {
-  car: Car;
+  car: CarWithImage;
 }
 const CarCard = ({ car }: CarCarProps) => {
+  const t = useTranslations("carCard");
   return (
     <section className="flex flex-col border border-gray-300 rounded-lg container mx-auto max-sm:w-sm bg-white hover:shadow-lg transition-all duration-200 hover:scale-99">
       <div className="w-full h-50 flex items-center justify-center relative  overflow-hidden">
@@ -24,15 +29,17 @@ const CarCard = ({ car }: CarCarProps) => {
           {car.brand}
         </Link>
         <p className="line-clamp-1">{car.description}</p>
-        <span className="font-bold ">${car.price.toString()}</span>
+        <p className="flex items-center justify-between">
+          <span className="font-bold ">${car.price.toString()}</span>
+          <span className="text-gray-500">{t(`status.${car.status}`)}</span>
+        </p>
         <div>
           <Link
             href={`/cars/${car.id}`}
             className="float-right px-3 py-1 rounded-lg bg-gray-100 text-neutral-800 font-semibold my-3 hover:bg-gray-200 transition-all duration-200"
           >
-            See Details
+            {t("seeDetails")}
           </Link>
-          <span className="text-gray-500 font-semibold">{car.status}</span>
         </div>
       </div>
     </section>

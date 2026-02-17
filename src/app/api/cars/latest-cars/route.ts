@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const latestCars = await prisma.car.findMany({
       orderBy: { createdAt: "desc" },
-      take: 8,
+      take: 4,
       include: { images: { take: 1 } },
     });
     return NextResponse.json(latestCars, { status: 200 });
