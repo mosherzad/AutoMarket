@@ -51,8 +51,8 @@ export default async function RootLayout({
           <Header />
           <ToastContainer />
           <main className="pb-20">{children}</main>
-          <MobileNavigation />
           <Footer />
+          <MobileNavigation />
         </NextIntlClientProvider>
       </body>
     </html>

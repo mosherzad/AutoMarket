@@ -23,7 +23,7 @@ const CarCard = ({ car }: CarCarProps) => {
       </div>
       <div className="p-2">
         <Link
-          href={`/car/${car.id}`}
+          href={`/cars/${car.id}`}
           className="text-sm lg:text-xl font-bold line-clamp-1 hover:underline"
         >
           {car.brand}

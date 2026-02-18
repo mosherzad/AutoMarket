@@ -40,7 +40,7 @@ const CarDetails = async ({ params }: CarDetailsProps) => {
   const relatedCars = allCars.filter((car) => car.carType === details.carType);
   return (
     <section className="container mx-auto max-w-7xl px-4">
-      <div className="flex flex-col lg:flex-row  gap-10 mt-10">
+      <div className="flex flex-col md:flex-row  gap-10 mt-10">
         <CarGallery images={details.images.map((img: any) => img.url)} />
         <div className="w-full md:w-1/2">
           <div className="bg-white p-6 rounded-xl shadow-sm space-y-6">
@@ -93,7 +93,7 @@ const CarDetails = async ({ params }: CarDetailsProps) => {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col gap-10 mt-5">
+      <div className="flex md:flex-row flex-col gap-10 mt-5">
         <div className="bg-white p-5 rounded-xl shadow-sm space-y-4 border w-full md:w-1/2">
           <h2 className="text-lg font-semibold">{t("sellerInfo")}</h2>
           <hr />
@@ -167,7 +167,7 @@ function DetailItem({
       <span className="text-red-600 text-lg">{icon}</span>
       <div>
         <p className="text-xs text-gray-500">{label}</p>
-        <p className="font-medium">{value}</p>
+        <p className="font-medium text-md">{value}</p>
       </div>
     </div>
   );

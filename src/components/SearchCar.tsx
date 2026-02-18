@@ -33,7 +33,7 @@ const SearchCar = () => {
           placeholder={t("seachPlaceholder")}
           className="px-6 py-3 rounded-lg bg-white border w-70 lg:w-xl"
         />
-        <MdSearch className="absolute top-3 inset-inline-end-4 text-xl" />
+        <MdSearch className="absolute top-4 inset-inline-end-4 text-xl" />
       </div>
     </form>
   );

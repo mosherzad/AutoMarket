@@ -24,7 +24,7 @@ export default async function Header() {
             AutoMarket
           </Link>
 
-          <div className="md:flex items-center gap-10 hidden">
+          <div className="lg:flex items-center gap-10 hidden">
             <Link
               href="/"
               className="text-lg font-medium flex items-center gap-1 hover:underline hover:text-red-700 transition-all duration-300"
