@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import CarCard from "@/components/CarCard";
 import Pagination from "@/components/Pagination";
 import FilterController from "@/components/FilterController";
-import { POST_PER_PAGE } from "@/lib/constants";
+import { DOMAIN, POST_PER_PAGE } from "@/lib/constants";
 import CarCardSkeleton from "@/components/CarCardSkeleton";
 import { Skeleton } from "@/components/ui/skeleton";
 import SearchCarSkeleton from "@/components/SearchCarSkeleton";
@@ -30,7 +30,7 @@ const ExploreCars = () => {
     const fetchCars = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/cars?${queryString}`);
+        const res = await fetch(`${DOMAIN}/api/cars?${queryString}`);
         const data = await res.json();
 
         setCars(data.cars || []);
