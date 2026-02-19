@@ -3,6 +3,32 @@ It also includes an admin dashboard for managing users and listings.
 
 Built with modern technologies to demonstrate real-world full-stack development skills.
 
+User Features
+	•	Browse available cars
+	•	View detailed car information
+	•	Filter cars by brand and price
+	•	Responsive design for all devices
+
+Admin Panel
+	•	View all users
+	•	Block users
+	•	Delete users
+	•	Manage car listings
+
+Tech Stack
+
+Frontend
+	•	Next.js
+	•	TypeScript
+	•	Tailwind CSS
+Backend
+	•	Next.js API Routes
+	•	Prisma ORM
+	•	PostgreSQL
+Other Tools
+	•	Authentication system
+	•	REST APIs
+	•	Responsive UI design
 
 
 
