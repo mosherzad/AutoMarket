@@ -1,3 +1,12 @@
+Auto Market is a full-stack car marketplace web application where users can explore, filter, and list cars based on their preferences.
+It also includes an admin dashboard for managing users and listings.
+
+Built with modern technologies to demonstrate real-world full-stack development skills.
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
